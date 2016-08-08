@@ -1,6 +1,11 @@
 Below you will find some information on how to perform common tasks.  
 You can find the most recent version of this guide [here](https://github.com/facebookincubator/create-react-app/blob/master/template/README.md).
 
+## Prerequisites 
+Install and editorconfig plugin in your favorite editor code.
+TODO: Complement this. Put links to the plugins or give instructions on how to install it. Even better write a wiki with it.
+
+
 ## Sending Feedback
 
 We are always open to [your feedback](https://github.com/facebookincubator/create-react-app/issues).
