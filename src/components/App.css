@@ -31,6 +31,22 @@
   padding: 10px 20px;
 }
 
+.App-env-label {
+  display: block;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  padding: 5px 7px;
+  font-size: 10px;
+  line-height: 1;
+  background-color: #000;
+  color: #ccc;
+  border-radius: 3px;
+  opacity: 0.3;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }

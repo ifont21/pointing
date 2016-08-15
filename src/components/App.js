@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Link } from 'react-router';
 import logo from '../images/logo.svg';
 import './App.css';
+import EnvironmentLabel from './EnvironmentLabel';
 
 class App extends Component {
   render() {
@@ -10,6 +11,7 @@ class App extends Component {
         <div className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           <h2>Welcome to React</h2>
+          <EnvironmentLabel />
         </div>
         <p className="App-intro">
           To get started, edit <code>src/components/App.js</code> and save to reload. Then navigate using the links below.
