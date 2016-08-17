@@ -1,0 +1,23 @@
+.HelloApi {
+  width: 450px;
+  margin: 30px auto;
+  text-align: left;
+
+  &-list {
+    padding: 0;
+    margin: 20px 0;
+    list-style-type: none;
+
+    > li {
+      display: block;
+      padding: 10px 0;
+    }
+
+    &-item-title {
+      font-size: 12px;
+      display: block;
+      margin-bottom: 5px;
+      color: #888;
+    }
+  }
+}

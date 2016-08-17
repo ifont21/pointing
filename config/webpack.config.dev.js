@@ -60,6 +60,10 @@ module.exports = {
         loader: 'style!css!postcss'
       },
       {
+        test: /\.scss$/,
+        loader: 'style!css!postcss!sass'
+      },
+      {
         test: /\.json$/,
         include: [paths.appSrc, paths.appNodeModules],
         loader: 'json'

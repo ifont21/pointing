@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { fetchPosts } from '../actions';
-import './HelloApi.css';
+import './HelloApi.scss';
 
 class HelloApi extends Component {
   componentWillMount() {
