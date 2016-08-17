@@ -23,6 +23,7 @@ class App extends Component {
         <ul className="App-nav">
           <li><Link to="/hello-world">Hello World</Link></li>
           <li><Link to="/hello-api">Hello Redux</Link></li>
+          <li><Link to="/hello-bootstrap">Hello Bootstrap</Link></li>
         </ul>
         <div className="App-content">
            {this.props.children}

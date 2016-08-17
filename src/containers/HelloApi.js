@@ -11,7 +11,7 @@ class HelloApi extends Component {
   renderPosts() {
     return this.props.posts.map((item) => {
       return (
-        <li className="list-group-item" key={item.id}>
+        <li key={item.id}>
           <span className="HelloApi-list-item-title">{`POST #${item.id}`}</span>
           {item.title}
         </li>
