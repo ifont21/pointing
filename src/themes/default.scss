@@ -1,0 +1,28 @@
+// /*!
+//  * Bootstrap v3.3.7 (http://getbootstrap.com)
+//  * Copyright 2011-2016 Twitter, Inc.
+//  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+//  */
+
+// //
+// // Load core variables and mixins
+// // --------------------------------------------------
+
+
+// // Override variables here
+$brand-primary: #4EAE68 !default;
+$border-radius-base: 3px;
+
+@import "~bootstrap-sass/assets/stylesheets/bootstrap/variables";
+@import "~bootstrap-sass/assets/stylesheets/bootstrap/mixins";
+
+.btn {
+  border-radius: $btn-border-radius-base;
+}
+
+.btn-primary {
+  @include button-variant($btn-primary-color, $btn-primary-bg, $btn-primary-border);
+}
+
+
+

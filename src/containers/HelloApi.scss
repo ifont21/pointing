@@ -1,5 +1,4 @@
 .HelloApi {
-  width: 450px;
   margin: 30px auto;
   text-align: left;
 
@@ -11,6 +10,9 @@
     > li {
       display: block;
       padding: 15px 0;
+      //padding-right: 20px;
+      //float: left;
+      //width: 50%;
     }
 
     &-item-title {

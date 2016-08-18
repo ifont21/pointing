@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { fetchPosts } from '../actions';
+import { Grid, Row, Col } from 'react-bootstrap';
 import './HelloApi.scss';
 
 class HelloApi extends Component {
@@ -9,7 +10,7 @@ class HelloApi extends Component {
   }
 
   renderPosts() {
-    return this.props.posts.map((item) => {
+    return this.props.posts.slice(0, 10).map((item) => {
       return (
         <li key={item.id}>
           <span className="HelloApi-list-item-title">{`POST #${item.id}`}</span>
@@ -21,19 +22,24 @@ class HelloApi extends Component {
 
   render() {
     return (
-      <div className="HelloApi">
-        <p>
-          Say hello to your first API call by using Redux. You can check the files at following folders
-          to see how it was implemented: <code>src/actions/</code>, <code>src/reducers/</code>,
-          and <code>src/containers/</code>
-        </p>
-        <hr />
-        <ul className="HelloApi-list list-group">
-          {this.renderPosts()}
-        </ul>
-        <hr />
-        API: <a href="https://jsonplaceholder.typicode.com">https://jsonplaceholder.typicode.com</a>
-      </div>
+      <Grid className="HelloApi">
+        <Row>
+          <Col sm={8} smOffset={2}>
+            <h3>Hello Redux</h3>
+            <p>
+              Say hello to your first API call by using Redux. You can check the files at following folders
+              to see how it was implemented at: <code>src/actions/</code>, <code>src/reducers/</code>,
+              and <code>src/containers/</code>
+            </p>
+            <hr />
+            <ul className="HelloApi-list list-group">
+              {this.renderPosts()}
+            </ul>
+            <hr />
+            API: <a href="https://jsonplaceholder.typicode.com">https://jsonplaceholder.typicode.com</a>
+          </Col>
+        </Row>
+      </Grid>
     )
   }
 }
