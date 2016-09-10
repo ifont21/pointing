@@ -1,16 +1,17 @@
 import React from 'react';
-import { Route } from 'react-router';
+import { Route, IndexRoute } from 'react-router';
 
 import App from './components/App';
-import HelloWorld from './components/HelloWorld';
-import HelloApi from './containers/HelloApi';
-import HelloBootstrap from './components/HelloBootstrap';
+import Ranking from './components/Ranking';
+import About from './components/About';
+import SignUp from './containers/Sign-up';
 
 export default (
   <Route path="/" component={App}>
-    <Route path="/hello-world" component={HelloWorld} />
-    <Route path="/hello-api" component={HelloApi} />
-    <Route path="/hello-bootstrap" component={HelloBootstrap} />
+    <IndexRoute path="/about" component={About} />
+    <Route path="/about" component={About} />
+    <Route path="/ranking" component={Ranking} />
+    <Route path="/sign-up" component={SignUp} />
   </Route>
 );
 
