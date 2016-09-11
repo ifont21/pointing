@@ -1,6 +1,6 @@
 // Shared settings
 let config = {
-  API_URL: 'http://jsonplaceholder.typicode.com'
+  API_URL: 'http://localhost:8089'
 }
 
 if (process.env.REACT_APP_ENV === 'production') {
