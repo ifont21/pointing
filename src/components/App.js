@@ -14,9 +14,9 @@ class App extends Component {
         <ul className="App-nav">
           <li><Link to="/about">About</Link></li>
           <li><Link to="/ranking">Challengers Ranking</Link></li>
-          <li><Link to="/sign-up">Get started</Link></li>
+          <li><Link to="/start">Get started</Link></li>
         </ul>
-        <div className="App-content">
+        <div className="container">
           {this.props.children}
         </div>
       </div>
